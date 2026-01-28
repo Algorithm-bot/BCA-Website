@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(BCA) Bachelors of Computer Application - YCMOU</title>
+
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="sems-nav-bar.css">
+
+    <!-- Icons library -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7SN5YGJP14');
+    </script>
+
+    <style>
+        .myP {
+            text-align: center;
+            align-items: center;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+
+        @media all and (max-width: 700px) {
+            .myP {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <!-- Logo content here -->
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" width="device-width"></section>
+    <div style="height: 200px">
+        <p class="myP">This is an unofficial website created and deployed by a BCA student in 2024</p>
+        <p class="myP">I hope you find this website useful</p>
+    </div>
+
+    <!--Icons-->
+    <div class="whatsapp">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <span class="phone-number">8879296799</span>
+    </div>
+
+    <div class="email">
+        <ion-icon name="mail-outline"></ion-icon>
+        <span class="mail">sahilsawant929@gmail.com</span>
+    </div>
+
+    <div class="linkelden">
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <span class="lund-id">linkedin.com/in/sahil-sawant-3b1131224</span>
+    </div>
+
+    <!-- JS (moved to bottom for performance + correct load order) -->
+    <!-- Jquery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Your custom script -->
+    <script src="index.js"></script>
+
+    <script>
+        document.querySelector(".navTrigger").addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

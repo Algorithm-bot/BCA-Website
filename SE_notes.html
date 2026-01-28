@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering (SE) Notes of BCA YCMOU</title>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SN5YGJP14');
+</script>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        margin-top: 160px;
+    }
+
+    .link-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .link-container p {
+        font-size: 25px;
+        margin: 0;
+        font-weight: bold;
+        color: black;
+    }
+
+    .link-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link-container a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .link-container a:first-child {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .link-container a:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-container a:active {
+        transform: translateY(1px) scale(0.98);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .link-container a.view {
+        background-color: #28a745;
+    }
+
+    .link-container a.download {
+        background-color: #dc3545;
+    }
+
+
+    @media (max-width: 650px) {
+        .link-container p {
+            font-size: 15px;
+        }
+
+        .link-container a {
+            padding: 8px 16px;
+            font-size: 14px;
+       }
+    }
+</style>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo"></div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">About</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="books.html">E-Books</a></li>
+                <li><a href="question_papers.html">Question Papers</a></li>
+                <li><a href="practicals.html">Practicals</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<script>
+    document
+        .querySelector(".navTrigger")
+        .addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+        });
+</script>
+
+<div class="content">
+
+
+    <div class="link-container">
+        <p>Download PDF</p>
+        <div>
+            <a href="/Downloads/SE_download.html"
+                class="download">Download</a>
+        </div>
+    </div>
+        <div class="link-container">
+            <p>Unit 1 ( Software Engineering and Models )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietv5412d1cf27b3471f838464a70e655f52" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 2 ( Requirement Analysis )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietv1b5feb2aac0b4788a230535eda13f7b2" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 3 ( Software Design )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietvc6a264c08e064e94a9ea18e6d0ec1f44" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 4 ( Coding, Structured Programming and Programming Practices )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietv626325f537fb42f0b0f22677060316ec" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 5 ( Software Testing )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietvcb3f751d0cac4bb49dc4c2f8ebbc51b7" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 6 ( Quality Assurance )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietved7552a9570042de92da195020a5445c" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 7 ( Software Configuration Management )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietv3cccd8317cb640d4b84c4e29892aef2e" class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 8 ( Latest Trends in Software Engineering )</p>
+            <div>
+                <a href="https://notebook.zohopublic.in/public/notes/bietv42f4bdc28b674ea5931e514a6aac356e" class="view">View</a>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>

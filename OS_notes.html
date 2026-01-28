@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System (OS) notes of BCA YCMOU</title>
+
+     <!--Google Ads -->
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+     crossorigin="anonymous"></script>
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SN5YGJP14');
+</script>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        margin-top: 160px;
+    }
+
+    .link-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .link-container p {
+        font-size: 25px;
+        margin: 0;
+        font-weight: bold;
+        color: black;
+    }
+
+    .link-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .link-container a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .link-container a:first-child {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .link-container a:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-container a:active {
+        transform: translateY(1px) scale(0.98);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .link-container a.view {
+        background-color: #28a745;
+    }
+
+    .link-container a.download {
+        background-color: #dc3545;
+    }
+
+
+    @media (max-width: 650px) {
+        .link-container p {
+            font-size: 15px;
+        }
+
+        .link-container a {
+            padding: 8px 16px;
+            font-size: 14px;
+       }
+    }
+</style>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<nav class="nav">
+    <div class="container">
+        <div class="logo"></div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="index.html">About</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="books.html">E-Books</a></li>
+                <li><a href="question_papers.html">Question Papers</a></li>
+                <li><a href="practicals.html">Practicals</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<script>
+    document
+        .querySelector(".navTrigger")
+        .addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+        });
+</script>
+
+<div class="content">
+
+
+    <div class="link-container">
+        <p>Download PDF</p>
+        <div>
+            <a href="/Downloads/OS_download.html"
+                class="download">Download</a>
+        </div>
+    </div>
+        <div class="link-container">
+            <p>Unit 1 (History of the Operating Systems)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1s6090563bcfaf450ea15cfc3a7c0ef047"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 2 ( Operating System Functions and Structure )</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1s10e9f1b55af24242a907aaf8dfe87ee7"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 3 (Information Management)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1sce6ee734e39f420db7a3a7e1853bb0d9"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 4 (Process Management)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1s24940c6f5e6048539f24654e4602a742"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 5 (Inter Process Communication)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1sa08f06180be04b99b66a76f4977b8352"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 6 (I/O Management and Deadlock)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1se2ba17c23c1e4cb0b6a2f2839742c861"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 7 (Memory Management)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1sab02c7eb24464546be5a7c93cb6d34f8"
+                    class="view">View</a>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <p>Unit 8 (Protection and Security)</p>
+            <div>
+                <a href="https://notebook.zoho.in/public/notes/u3i1s178242018caa4cfabb00fd467ae9cec4"
+                    class="view">View</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

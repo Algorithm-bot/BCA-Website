@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download EVS Notes - Payment Required</title>
+    <link rel="stylesheet" href="../sems-nav-bar.css" />
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+        crossorigin="anonymous"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7SN5YGJP14');
+    </script>
+    <style>
+        /* CSS Variables for easy theme management */
+        :root {
+            --primary-color: #007bff;
+            --primary-hover: #0056b3;
+            --secondary-color: #6c757d;
+            --success-gradient: linear-gradient(45deg, #28a745, #20c997);
+            --background-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --text-dark: #333;
+            --text-light: #666;
+            --card-background: #ffffff;
+            --border-radius: 12px;
+            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background-gradient);
+            min-height: 100vh;
+            color: var(--text-dark);
+        }
+
+        .nav {
+            background: rgba(20, 20, 20, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 120px auto 40px;
+            padding: 40px;
+            background: var(--card-background);
+            border-radius: 20px;
+            box-shadow: var(--shadow-strong);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Reusable card style for info sections */
+        .info-card {
+            background: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+            border: 1px solid #e9ecef;
+        }
+
+        .info-card h2 {
+            font-size: 2.5em;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: var(--text-light);
+            font-size: 2em;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .price-section {
+            background: var(--success-gradient);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
+        }
+        
+        .price-section h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        
+        /* Styles for the new interactive payment options */
+        .price-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .price-options input[type="radio"] {
+            display: none; /* Hide the actual radio button */
+        }
+
+        .price-options .amount-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .price-options input[type="radio"]:checked + .amount-btn {
+            background-color: white;
+            color: #28a745;
+            border-color: white;
+            transform: scale(1.1);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, var(--primary-color), var(--primary-hover));
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 123, 255, 0.4);
+        }
+
+        .download-btn:disabled {
+            background: var(--secondary-color);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .terms {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        .policy-links {
+            margin-top: 20px;
+        }
+
+        .policy-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .policy-links a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                margin: 100px 20px 20px;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .price-options {
+                flex-direction: column;
+            }
+            
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+        <!-- Ads by Astra -->
+     <script async="async" data-cfasync="false" src="//pl27534580.revenuecpmgate.com/4e67649e310d199d2335c6029c287461/invoke.js"></script>
+     <div id="container-4e67649e310d199d2335c6029c287461"></div>
+     
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../notes.html">Notes</a></li>
+                    <li><a href="../books.html">E-Books</a></li>
+                    <li><a href="../question_papers.html">Question Papers</a></li>
+                    <li><a href="../practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger"><i></i><i></i><i></i></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Enviornamental Studies Notes</h1>
+
+        <div class="info-card">
+            <h2><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>File Details</h2>
+            <p><strong>Package:</strong> EVS Notes- Unit 1 to Unit 6</p>
+            <p><strong>File Size:</strong> 393 KB | <strong>Format:</strong> PDF</p>
+        </div>
+
+        <div class="price-section">
+            <h3>Contribute any amount you’re comfortable with</h3>
+            <div class="price-options">
+                <label>
+                    <input type="radio" name="amount" value="50" checked>
+                    <span class="amount-btn">₹50</span>
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="100">
+                    <span class="amount-btn">₹100</span>
+                </label>
+                <label>
+                    <input type="radio" name="amount" value="150">
+                    <span class="amount-btn">₹150</span>
+                </label>
+            </div>
+        </div>
+
+        <button class="download-btn" onclick="initiatePayment()">
+            Pay & Download
+        </button>
+
+        <div class="terms">
+            <strong>Terms & Conditions:</strong><br>
+            Payment is non-refundable. Access is granted immediately after successful payment. Technical support is available for any download issues.
+            <div class="policy-links">
+                <a href="../policies.html#terms" target="_blank">Full Terms</a>
+                <a href="../policies.html#privacy" target="_blank">Privacy Policy</a>
+                <a href="../policies.html#refund" target="_blank">Refund Policy</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Navbar script
+        document.querySelector(".navTrigger").addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+        });
+
+        // Payment script
+        function initiatePayment() {
+            const selectedAmount = document.querySelector('input[name="amount"]:checked');
+
+            if (!selectedAmount) {
+                alert("Please select a contribution amount.");
+                return;
+            }
+            
+            const amount = selectedAmount.value;
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.disabled = true;
+            downloadBtn.textContent = 'Redirecting to Payment...';
+
+            // IMPORTANT: The method for passing the amount and other data is specific
+            // to the payment gateway (Cashfree). This is a simplified example.
+            // You might need to add order IDs, customer details, etc.
+
+            // The original URL had a typo 'https://https://'. This is now fixed.
+            const baseUrl = "https://payments.cashfree.com/forms/Enviornmental-Studies";
+            const redirectUrl = "https://16045cf7fbfd.ngrok-free.app";
+
+            // Example of constructing the final URL. Check Cashfree docs for the correct parameter names.
+            const finalUrl = `${baseUrl}?amount=${amount}&redirect_url=${redirectUrl}`;
+            
+            console.log("Redirecting to:", finalUrl); // For debugging
+            window.location.href = finalUrl;
+        }
+    </script>
+</body>
+
+</html>

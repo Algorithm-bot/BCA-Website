@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>Semester 1 notes of BCA YCMOU</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7SN5YGJP14');
+    </script>
+
+
+    <style>
+        body {
+
+            background-color: #1C1C1C;
+
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 34px;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #e4dbdb36;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #6e6565;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <script>
+        document
+            .querySelector(".navTrigger")
+            .addEventListener("click", function () {
+                document.querySelector(".nav").classList.toggle("active");
+            });
+    </script>
+
+    <h1> Coming Soon...</h1>
+</body>
+
+</html>

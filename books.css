@@ -1,0 +1,73 @@
+body{
+  background-image: url('question_papers.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* Editing images */
+.upper-image-container {
+  margin-top: 140px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.bottom-image-container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Hovering the books */
+.upper-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.upper-image-container img {
+  transition: transform 0.3s ease;
+}
+
+.upper-image-container img:hover {
+  transform: scale(1.1);
+}
+
+.bottom-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-image-container img {
+  transition: transform 0.3s ease;
+}
+
+.bottom-image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .upper-image-container {
+      height: auto; /* Adjust the height to fit content */
+      overflow-y: auto; /* This will enable vertical scrolling */
+  }
+
+  .upper-image-container img {
+      display: block;
+      margin-bottom: 10px; /* Add some spacing between images */
+      width: 100%; /* Ensure images take full width of container */
+  }
+
+  .bottom-image-container {
+      height: auto; /* Adjust the height to fit content */
+      overflow-y: auto; /* This will enable vertical scrolling */
+  }
+
+  .bottom-image-container img {
+      display: block;
+      margin-bottom: 10px; /* Add some spacing between images */
+      width: 100%; /* Ensure images take full width of container */
+  }
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download  Notes - Payment Required</title>
+    <link rel="stylesheet" href="sems-nav-bar.css" />
+
+      <!--Google Ads -->
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+   crossorigin="anonymous"></script>
+
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-7SN5YGJP14');
+</script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .nav {
+            background: rgba(6, 6, 6, 0.95);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 120px auto 40px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .pdf-preview {
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .pdf-preview p,h3{
+            color:black;
+        }
+
+        .pdf-icon {
+            font-size: 80px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        .file-info {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .file-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .file-size {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .price-section {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.3);
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .currency {
+            font-size: 24px;
+            opacity: 0.9;
+        }
+
+        .payment-methods {
+            margin: 30px 0;
+        }
+
+        .payment-method {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .payment-method:hover {
+            border-color: #007bff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        .payment-method.selected {
+            border-color: #007bff;
+            background: #f8f9ff;
+        }
+
+        .phonepe-logo {
+            width: 40px;
+            height: 40px;
+            background: #5f259f;
+            border-radius: 8px;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 123, 255, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(1px) scale(0.98);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+        }
+
+        .download-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .terms {
+            font-size: 14px;
+            color: #666;
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            background: #6c757d;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .policy-links {
+    margin-top: 10px;
+}
+
+.policy-links a {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 6px 14px;
+    font-size: 14px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.policy-links a:hover {
+    background: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 100px 20px 20px;
+                padding: 20px;
+            }
+            
+            .price {
+                font-size: 36px;
+            }
+            
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelector(".navTrigger").addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+        });
+    </script>
+
+    <div class="content">
+        <h1>Download PDS Notes</h1>
+        <p>Complete Personality and Career Skills Notes for BCA YCMOU</p>
+
+        <div class="pdf-preview">
+            <div class="pdf-icon">📄</div>
+            <h3>PDF Document Preview</h3>
+            <p>Your comprehensive study material is ready for download</p>
+        </div>
+
+        <div class="file-info">
+            <div class="file-name"> Notes - Complete Package</div>
+            <div class="file-size">File Size: 395 KB | Format: PDF</div>
+            <div class="file-size">Content: All 15 Units with Detailed Notes</div>
+        </div>
+
+        <div class="price-section">
+            <div class="currency">₹</div>
+            <div class="price">1</div>
+            <div>One-time payment for lifetime access</div>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <div class="payment-method selected" onclick="selectPayment('phonepe')">
+                <div class="phonepe-logo"></div>
+                <span style="font-weight: bold; color: #5f259f;">PhonePe</span>
+                <span style="float: right; color: #28a745;">✓</span>
+            </div>
+        </div>
+
+        <button class="download-btn" onclick="initiatePayment()">
+            Pay ₹1 & Download
+        </button>
+
+        <div class="terms">
+            <strong>Terms & Conditions:</strong><br>
+            • Payment is non-refundable once download is initiated<br>
+            • Access is granted immediately after successful payment<br>
+            • Technical support available for download issues<br><br>
+        
+            <div class="policy-links">
+                <a href="policies.html#terms" target="_blank">View Full Terms & Conditions</a>
+                <a href="policies.html#privacy" target="_blank">Privacy Policy</a>
+                <a href="policies.html#refund" target="_blank">Refund Policy</a>
+            </div>
+        </div>
+        
+
+        <a href="PDS_notes.html" class="back-btn">← Back to Notes</a>
+    </div>
+
+    <script>
+        function selectPayment(method) {
+            // Remove selection from all payment methods
+            document.querySelectorAll('.payment-method').forEach(el => {
+                el.classList.remove('selected');
+                el.querySelector('span:last-child').style.display = 'none';
+            });
+            
+            // Select the clicked method
+            event.currentTarget.classList.add('selected');
+            event.currentTarget.querySelector('span:last-child').style.display = 'inline';
+        }
+
+        function initiatePayment() {
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.disabled = true;
+            downloadBtn.textContent = 'Processing Payment...';
+            
+            // Simulate payment processing (replace with actual PhonePe integration)
+            setTimeout(() => {
+                // Here you would integrate with PhonePe API
+                // For now, we'll simulate a successful payment
+                simulatePhonePePayment();
+            }, 2000);
+        }
+
+        function simulatePhonePePayment() {
+            // This is a simulation - replace with actual PhonePe integration
+            const downloadBtn = document.querySelector('.download-btn');
+            
+            // Show payment success and trigger download
+            downloadBtn.textContent = 'Payment Successful! Downloading...';
+            downloadBtn.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+            
+            setTimeout(() => {
+                // Trigger actual PDF download
+                downloadPDF();
+            }, 1500);
+        }
+
+        function downloadPDF() {
+            // Create a temporary link to download the PDF
+            const link = document.createElement('a');
+            link.href = '/Downloads/test.txt';
+            link.download = 'test.txt';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Reset button
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.textContent = 'Download Complete! ✓';
+            downloadBtn.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+            downloadBtn.disabled = true;
+            
+            // Show success message
+            setTimeout(() => {
+                alert('Thank you for your purchase! Your PDS Notes have been downloaded successfully.');
+            }, 1000);
+        }
+
+        // PhonePe Integration Placeholder
+        // Replace this function with actual PhonePe API integration
+        function integratePhonePe() {
+            /*
+            // Example PhonePe integration code:
+            const phonePeConfig = {
+                merchantId: 'YOUR_MERCHANT_ID',
+                merchantTransactionId: generateTransactionId(),
+                amount: 9900, // Amount in paise (₹99.00)
+                redirectUrl: window.location.href,
+                callbackUrl: window.location.href + '?payment=success',
+                merchantUserId: 'USER_ID',
+                mobileNumber: 'USER_MOBILE',
+                paymentInstrument: {
+                    type: 'PAY_PAGE'
+                }
+            };
+            
+            // Initialize PhonePe payment
+            PhonePe.init(phonePeConfig);
+            */
+        }
+
+        function generateTransactionId() {
+            return 'TXN_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        }
+    </script>
+</body>
+</html>

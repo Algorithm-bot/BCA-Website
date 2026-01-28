@@ -1,0 +1,180 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+
+body {
+  background: linear-gradient(to right, #ffffff, #ffffff); /* Adjust gradient colors */
+  background-image: url('trial-2.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+}
+
+
+/* Dropdown styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  min-width: 140px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 1px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+.year-widget {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #2b2828, #494747); /* Use gradients for a 3D effect */
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-right: 60px;
+  border: 5px solid #cccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adding a subtle box shadow for depth */
+  transition: background 0.3s, transform 0.3s; /* Adding transitions for a smoother effect */
+}
+
+.year-widget:hover {
+  background: linear-gradient(45deg, #494747, #2b2828); /* Adjust gradient colors for hover effect */
+  transform: scale(1.1); /* Scale up the widget on hover for a subtle interactive effect */
+}
+
+.semester-widget {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #2b2828, #494747); /* Use gradients for a 3D effect */
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-right: 60px;
+  border: 5px solid #cccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adding a subtle box shadow for depth */
+  transition: background 0.3s, transform 0.3s; /* Adding transitions for a smoother effect */
+  display: none;
+}
+
+.semester-widget:hover {
+  background: linear-gradient(45deg, #494747, #2b2828); /* Adjust gradient colors for hover effect */
+  transform: scale(1.1); /* Scale up the widget on hover for a subtle interactive effect */
+}
+
+
+
+
+
+  
+
+  /* Add your existing CSS styles here */
+
+/* Center container */
+.center-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+/* Applied styles to the subject widgets */
+.subject {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(45deg, #2b2828, #494747);
+  color: #fff;
+  text-align: center;
+  font-size: 33px; /* Adjust the font size as needed */
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  margin-right: 60px;
+  border: 5px solid #cccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.subject span {
+  line-height: 1;
+}
+
+
+      .subject:hover {
+          background: linear-gradient(45deg, #494747, #2b2828);
+          transform: scale(1.1);
+      }
+
+
+
+ 
+  @media screen and (max-width:600px)  {
+
+  
+    
+    .year-widget{
+      overflow-y: auto; /* This will enable vertical scrolling */
+      margin-top: 25px;
+
+
+    }
+
+
+    
+  }
+
+
+
+
+
+  

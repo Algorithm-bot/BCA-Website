@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <title>Android Programming, PHP Programming, Personality and Carrer Skills- Online textbooks of BCA YCMOU</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+     crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7SN5YGJP14');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="books.css">
+    
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="snow.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container-books">
+        <a href="Android_book.html" class="button">CMP-516 Android Programming</a>
+        <a href="php_book.html" class="button">CMP-517 PHP Programming</a>
+        <a href="personality_book.html" class="button">SEC-611 Personality & Carrer Skills</a>
+    
+    </div>
+
+    <script>
+        document.querySelector('.navTrigger').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

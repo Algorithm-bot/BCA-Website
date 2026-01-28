@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA notes</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618388833755464"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="sems-nav-bar.css">
+    <script src="script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SN5YGJP14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SN5YGJP14');
+</script>
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Notes</a></li>
+                    <li><a href="books.html">E-Books</a></li>
+                    <li><a href="question_papers.html">Question Papers</a></li>
+                    <li><a href="practicals.html">Practicals</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+    <script>
+        document
+          .querySelector(".navTrigger")
+          .addEventListener("click", function () {
+            document.querySelector(".nav").classList.toggle("active");
+          });
+      </script>
+    
+    
+
+    <!-- Square Widget -->
+    <div class="center-container" id="widget-container">
+
+        <div class="year-widget" id="year1" onclick="loadSemesters(1)">1st year</div>
+        <div class="year-widget" id="year2" onclick="loadSemesters(2)">2nd year</div>
+        <div class="year-widget" id="year3" onclick="loadSemesters(3)">3rd year</div>
+
+
+
+                <a href="sem-1-subject-widget.html">
+        <div id="semester1" class="semester-widget">
+            Semester 1
+        </div>
+        </a>
+
+        <a href="sem-2-subject-widget.html">
+        <div id="semester2" class="semester-widget">
+            Semester 2
+        </div>
+        </a>
+
+            <a href="sem-3-subject-widget.html">
+            <div id="semester3" class="semester-widget">
+                Semester 3
+            </div>
+            </a>
+        
+
+            <a href="sem-4-subject-widget.html">
+            <div id="semester4" class="semester-widget">
+                Semester 4
+            </div>
+            </a>
+        
+         
+                <a href="sem-5-subject-widget.html">
+        
+        <div id="semester5" class="semester-widget">
+            Semester 5
+        </div>
+        </a>
+
+        <a href="sem-6-subject-widget.html">
+        <div id="semester6" class="semester-widget">
+            Semester 6
+        </div>
+        </a>
+
+    </div>
+
+
+
+
+</body>
+</html>
